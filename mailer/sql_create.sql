@@ -1,0 +1,10 @@
+CREATE DATABASE mailer;
+USE mailer;
+CREATE TABLE tracker (
+    id VARCHAR(32) PRIMARY KEY,
+    Sender VARCHAR(50) NOT NULL,
+    Target VARCHAR(30) NOT NULL,
+    ip VARCHAR(15) NULL,
+    status BOOLEAN NULL,
+    OPEN DATETIME
+);
